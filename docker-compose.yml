@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  web:
+    environment:
+      - API_PORT=3000
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./src:/home/node/app/src
+      - ./nodemon.json:/home/node/app/nodemon.json
+    container_name: runbook-keeper-container
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    command: npm run dev
+  redis:
+    image: redis
+  mongo:
+    image: mongo
+volumes:
+  logvolume01: {}
