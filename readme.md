@@ -1,14 +1,14 @@
 
-##Runbook-Keeper
+## Runbook-Keeper
 
 An app for storing, displaying, and notifying runbooks for your devops workflow. 
 
-###Dependencies:
+### Dependencies:
 * Typescript + Express
 * [MongoDB](https://docs.mongodb.com/)
 * [Redis](https://redis.io/documentation)
 
-###Running with Docker Compose
+### Running with Docker Compose
 
 The app can be run locally using [docker-compose](https://docs.docker.com/compose/). The first time, you'll want to run the build step:
 
@@ -23,5 +23,5 @@ Everything can be brought down with:
 
     docker-compose down
 
-###Runbook API:
+### Runbook API:
     
