@@ -19,6 +19,8 @@
     "winston": "^3.3.3"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "@types/mongoose": "^5.11.97",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3"
   }
 }
