@@ -3,7 +3,6 @@ import logger from "../util/logger";
 import {constants} from "http2";
 
 class RunbookApi {
-
     static get(req: express.Request, res: express.Response) {
         logger.debug("RunbookApi.get called");
         res.status(constants.HTTP_STATUS_OK).json({
@@ -30,7 +29,6 @@ class RunbookApi {
             message: 'placeholder',
         });
     }
-
 }
 
 export default RunbookApi;
