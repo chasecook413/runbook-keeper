@@ -4,7 +4,7 @@
 An app for storing, displaying, and notifying runbooks for your devops workflow. 
 
 ### Dependencies:
-* Typescript + Express
+* [Typescript](https://www.typescriptlang.org/docs/) + [Express](https://expressjs.com/en/4x/api.html)
 * [MongoDB](https://docs.mongodb.com/)
 * [Redis](https://redis.io/documentation)
 
@@ -24,4 +24,5 @@ Everything can be brought down with:
     docker-compose down
 
 ### Runbook API:
-    
+   
+See the [Open API 3.0 definition](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/chasecook413/runbook-keeper/main/docs/api-def.yaml).
