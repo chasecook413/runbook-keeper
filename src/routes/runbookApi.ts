@@ -1,6 +1,7 @@
 import express from "express";
 import logger from "../util/logger";
 import {constants} from "http2";
+import RunbookModel from "../models/runbook";
 
 class RunbookApi {
     static get(req: express.Request, res: express.Response) {

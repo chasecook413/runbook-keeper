@@ -1,7 +1,9 @@
 import {Express} from "express";
+import express from "express"
 import UserApi from "./userApi";
 import RunbookApi from "./runbookApi";
 import StatusApi from "./statusApi";
+import {constants} from "http2";
 
 class Routes {
     static setRoutes(app: Express) {
@@ -16,6 +18,13 @@ class Routes {
         app.post('/user', UserApi.create);
         app.put('/user/:id', UserApi.update);
         app.delete('/user/:id', UserApi.delete);
+
+        // TODO: better 404 handler?
+        app.use((req: express.Request, res: express.Response) => {
+            res.status(constants.HTTP_STATUS_NOT_FOUND).json({
+                message: 'this API call does not exist',
+            });
+        });
     }
 }
 
