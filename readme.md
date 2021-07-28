@@ -8,6 +8,25 @@ An app for storing, displaying, and notifying runbooks for your devops workflow.
 * [MongoDB](https://docs.mongodb.com/)
 * [Redis](https://redis.io/documentation)
 
+### Development Scripts
+
+The following actions are available for local development. Note that the server has direct dependencies of MongoDB and Redis, and it will expect to connect on launch. The recommended way of launching the server is through docker-compose. 
+#### Starting the server
+
+    npm start
+
+#### Compiling Typescript
+
+    npm run build
+
+#### Running locally in development mode
+
+    npm run dev
+
+#### Running [TSLint](https://palantir.github.io/tslint/usage/cli/):
+
+    npm run lint
+
 ### Running with Docker Compose
 
 The app can be run locally using [docker-compose](https://docs.docker.com/compose/). The first time, you'll want to run the build step:
@@ -26,3 +45,5 @@ Everything can be brought down with:
 ### Runbook API:
    
 See the [Open API 3.0 definition](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/chasecook413/runbook-keeper/main/docs/api-def.yaml).
+
+
